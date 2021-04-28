@@ -34,7 +34,7 @@ const markHeight = 1.69;
 let johnWeight = 92;
 let johnHeight = 1.95;
 */
-
+//----------------------challenge 1---------------------------
 // let johnWeight = 92;
 // let johnHeight = 1.95;
 // let johnBMI = johnWeight / johnHeight ** 2;
@@ -72,9 +72,38 @@ multiple
 lines`)
 */
 
+//--------------------------if else----------------------
+/*
 const age = 19;
-const isOldEnough = age >= 18;
+// const isOldEnough = age >= 18;
 
-if () {
+if (age >= 18) {
+    console.log(`Kev can start driving `)
+} else {
+    const yearsLeft = 18 - age
+    console.log(`Kev is too young. Wait another ${yearsLeft} years`)
+
+}
+
+*/
+//------------------------------challenge 2----------------------------------
+let johnWeight = 92;
+let johnHeight = 1.95;
+let johnBMI = johnWeight / johnHeight ** 2;
+console.log(johnBMI);
+
+
+let markWeight = 78;
+let markHeight = 1.69;
+let markBMI = markWeight / markHeight ** 2;
+let markHigherBMI = markBMI > johnBMI;
+console.log(markBMI);
+
+console.log(markHigherBMI);
+
+if (markBMI > johnBMI) {
+    console.log(`mark's BMI (${markBMI}) is higher than johns(${johnBMI})`)
+} else {
+    console.log(`john's BMI (${johnBMI}) is higher than marks(${markBMI})`)
 
 }
