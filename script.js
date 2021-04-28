@@ -203,3 +203,33 @@ if (markBMI > johnBMI) {
 //     default:
 //         console.log(`not valid day`);
 // }
+
+// ------------------------statements and expressions--------------
+
+// 3 + 4 // expression produces value
+// 1991 // expression
+
+// if (23 > 10) { // statement does not produce value
+//     const str = `23 is bigger`; // string is expression whole line is statement
+// }
+
+// ------------------------conditional (ternary) operator--------------
+// ? basically if with mandatory else. condition, if, else (3 parts therefore ternary)
+
+const age = 23;
+age >= 18 ? console.log(`i like to drink wine`) : console.log(`i like to drink water`);
+
+const drink = age >= 18 ? `wine` : `water`;
+console.log(drink);
+
+// above is equivalent to:
+let drink2;
+if (age >= 18) {
+    drink2 = `wine`;
+} else {
+    drink2 = `water`;
+}
+console.log(drink2)
+
+
+console.log(`i like to drink ${age >= 18 ? `wine` : `water`}`)
