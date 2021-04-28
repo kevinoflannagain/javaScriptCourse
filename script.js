@@ -87,6 +87,7 @@ if (age >= 18) {
 
 */
 //------------------------------challenge 2----------------------------------
+/*
 let johnWeight = 92;
 let johnHeight = 1.95;
 let johnBMI = johnWeight / johnHeight ** 2;
@@ -105,5 +106,30 @@ if (markBMI > johnBMI) {
     console.log(`mark's BMI (${markBMI}) is higher than johns(${johnBMI})`)
 } else {
     console.log(`john's BMI (${johnBMI}) is higher than marks(${markBMI})`)
-
 }
+*/
+
+//--------------------type conversion and coercion---------------------------
+//can convert to number, string, boolean
+// const inputYear = '1991';
+// console.log(Number(inputYear), inputYear)
+// console.log(Number(inputYear) + 18)
+
+// console.log(Number('kev')) // give NaN
+// console.log(String(23), 23) // give NaN
+
+// //type coercion + auto converts to string
+// console.log('i am ' + 23 + ' years old')
+
+// //type coercion - auto converts to number
+// console.log('23' - '10' - 3)
+
+// let n = '1' + 1;
+// n = n - 1;
+// console.log(n) // n is a number 10
+
+//--------------------truthy and falsy values---------------------------
+// 5 falsy vals: 0, '', undefined, null, NaN
+//will become false when converted to boolean
+// everything else converts to true
+console.log(Boolean({})) // empty object converts to true
