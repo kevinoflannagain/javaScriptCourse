@@ -132,4 +132,57 @@ if (markBMI > johnBMI) {
 // 5 falsy vals: 0, '', undefined, null, NaN
 //will become false when converted to boolean
 // everything else converts to true
-console.log(Boolean({})) // empty object converts to true
+// console.log(Boolean({})) // empty object converts to true
+
+// ------------------------------equality operators == / === -------------------------
+// always use ===
+// const age = 18;
+// if (age === 18) console.log(`you just became an adult`);
+
+// // const fav = prompt(`Whats your fav number`);
+// const fav = Number(prompt(`Whats your fav number`));
+// console.log(fav)
+// console.log(typeof fav) // the prompt returns a string unless converted
+
+// if (fav === 23) {
+//     console.log('cool, 23 is a number')
+// } else if (fav === 7) {
+//     console.log(`7 is also a cool number`)
+// } else {
+//     console.log(`number isn't 23 or 7`)
+// }
+
+// ------------------------------logical operators-------------------------
+
+// const hasDriverLicense = true;
+// const hasGoodVision = false;
+
+// if (hasDriverLicense && hasGoodVision) {
+//     console.log(`can drive`);
+// } else {
+//     console.log(`cant drive safely`);
+// }
+
+// -----------------------------challenge 3---------------------------------
+
+// dolphinScore = (96 + 108 + 89) / 3
+// koalaScore = (88 + 91 + 110) / 3
+// console.log(`dolphins: ${dolphinScore}, koalas: ${koalaScore}`);
+
+// if (dolphinScore > koalaScore && dolphinScore >= 100) {
+//     console.log(`dolphins win ${dolphinScore} : ${koalaScore}`)
+// } else if (koalaScore > dolphinScore && koalaScore >= 100) {
+//     console.log(`koalas win ${koalaScore} : ${dolphinScore}`)
+// } else if (dolphinScore >= 100) {
+//     console.log(`draw`);
+// } else {
+//     console.log(`no one`);
+// }
+
+// ---------------------- switch statement -------------------
+const day = `monday`
+
+switch (day) {
+    case `monday`:
+        console.log(`go to code meetup`)
+}
