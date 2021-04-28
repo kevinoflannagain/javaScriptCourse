@@ -180,26 +180,26 @@ if (markBMI > johnBMI) {
 // }
 
 // ---------------------- switch statement -------------------
-const day = `monday`
+// const day = `monday`
 
-switch (day) {
-    case `monday`:
-        console.log(`go to code meetup`);
-        break;
-    case `tuesday`:
-        console.log(`make video`);
-        break;
-    case `wed`:
-    case `thurs`:
-        console.log(`write code`);
-        break
-    case `fri`:
-        console.log(`review`);
-        break;
-    case `sat`:
-    case `sun`:
-        console.log(`review`);
-        break;
-    default:
-        console.log(`not valid day`);
-}
+// switch (day) {
+//     case `monday`:
+//         console.log(`go to code meetup`);
+//         break;
+//     case `tuesday`:
+//         console.log(`make video`);
+//         break;
+//     case `wed`:
+//     case `thurs`:
+//         console.log(`write code`);
+//         break
+//     case `fri`:
+//         console.log(`review`);
+//         break;
+//     case `sat`:
+//     case `sun`:
+//         console.log(`review`);
+//         break;
+//     default:
+//         console.log(`not valid day`);
+// }
