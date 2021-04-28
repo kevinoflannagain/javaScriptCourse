@@ -231,5 +231,11 @@ if (age >= 18) {
 }
 console.log(drink2)
 
-
 console.log(`i like to drink ${age >= 18 ? `wine` : `water`}`)
+
+// ------------------------------challenge 4-------------------------------------
+
+
+const bill = 40;
+const tip = bill >= 300 && bill <= 50 ? bill * 0.2 : bill * 0.15
+console.log(`bill: ${bill} tip: ${tip}, total: ${tip + bill}`)
