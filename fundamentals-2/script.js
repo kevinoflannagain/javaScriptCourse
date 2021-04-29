@@ -295,3 +295,32 @@
 // console.log(`johns BMI ${john.calcBMI()} is ${john.calcBMI() > mark.calcBMI() ? 'higher' : 'lower'} than marks ${mark.calcBMI()}`)
 
 // ------------------------------------------loops---------------------------------------------------
+
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`lifting rep number ${rep}`)
+}
+
+const kev = [
+    'kev',
+    'flannagain',
+    2037 - 1991,
+    'engineer',
+    ['mike', 'steve']
+];
+
+const types = [];
+
+for (let i = 0; i < kev.length; i++) {
+    console.log(kev[i]);
+    // types[i] = typeof (kev[i])
+    types.push(typeof kev[i])
+}
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020]
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i]);
+}
+console.log(ages);
