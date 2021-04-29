@@ -208,9 +208,28 @@
 
 // -------------------------------------------dot vs bracket notation---------------------------------------------------
 const kev = {
-    firstName: 'kev',
+    firstName: 'kevin',
     lastName: 'oflannagain',
+    friends: ['steve', 'mike', 'niamh'],
     age: 2037 - 1991,
     job: 'engineer',
 }
+
+console.log(kev);
+console.log(kev.lastName);
+console.log(kev['lastName']);
+console.log(kev['lastName']);
+const nameKey = 'Name';
+console.log(kev['first' + nameKey]);
+
+
+const interest = prompt('what do you want to know about kev? choose between firstName, lastName')
+console.log(interest)
+console.log(kev.interest) // gives undefined
+console.log(kev[interest])
+
+kev.location = 'ireland'
+kev['twitter'] = '@kev'
 console.log(kev)
+
+console.log(`${kev.firstName} has ${kev.friends.length} and his best friend is ${kev.friends[0]}`)
