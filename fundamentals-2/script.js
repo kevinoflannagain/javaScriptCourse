@@ -121,3 +121,30 @@
 // }
 // console.log(dolphins, koalas);
 // console.log(checkWinner(dolphins, koalas))
+
+// ------------------------------------Arrays--------------------------------------------
+// only primitive vals immutable, arrays not immutable
+// however cant do: friends = ['bob'] after initializing
+const friends = ['michael', 'steve', 'peter'];
+console.log(friends);
+
+const y = new Array(1990, 1234, 1235);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'jake';
+console.log(friends);
+
+const kev = ['michael', friends, 2037 - 1995];
+console.log(kev);
+
+// exercise
+const calcAge = function (birthyear) {
+    return 2037 - birthyear
+}
+
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[2])]
+console.log(ages)
