@@ -105,19 +105,19 @@
 
 // ------------------------------------Challenge 1--------------------------------------------
 
-const ave = (score1, score2, score3) => (score1 + score2 + score3) / 3;
-const dolphins = (ave(85, 54, 41));
-const koalas = (ave(23, 34, 27));
+// const ave = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+// const dolphins = (ave(85, 54, 41));
+// const koalas = (ave(23, 34, 27));
 
-function checkWinner(dolphin, koala) {
-    console.log(dolphin, koala);
-    if (koala >= dolphin * 2) {
-        return `koalas win (${koalas} vs ${dolphins})`
-    } else if (dolphin >= koala * 2) {
-        return `dolphin win (${dolphin} vs ${koala})`
-    } else {
-        return `no winner`
-    }
-}
-console.log(dolphins, koalas);
-console.log(checkWinner(dolphins, koalas))
+// function checkWinner(dolphin, koala) {
+//     console.log(dolphin, koala);
+//     if (koala >= dolphin * 2) {
+//         return `koalas win (${koalas} vs ${dolphins})`
+//     } else if (dolphin >= koala * 2) {
+//         return `dolphin win (${dolphin} vs ${koala})`
+//     } else {
+//         return `no winner`
+//     }
+// }
+// console.log(dolphins, koalas);
+// console.log(checkWinner(dolphins, koalas))
