@@ -236,40 +236,62 @@
 
 // -------------------------------------------object methods---------------------------------------------------
 
-const kev = {
-    firstName: 'kevin',
-    lastName: 'oflannagain',
-    birthyear: 1995,
-    friends: ['steve', 'mike', 'niamh'],
-    job: 'engineer',
-    hasDriversLicense: true,
+// const kev = {
+//     firstName: 'kevin',
+//     lastName: 'oflannagain',
+//     birthyear: 1995,
+//     friends: ['steve', 'mike', 'niamh'],
+//     job: 'engineer',
+//     hasDriversLicense: true,
 
-    // calcAge: function (birthyear) {
-    //     return 2037 - birthyear;
-    // }
-    // calcAge: function () {
-    //     return 2037 - this.birthyear;
-    // }
-    calcAge: function () {
-        this.age = 2037 - this.birthyear
-        return this.age;
-    },
-    // ------------------------------------------challenge---------------------------------------------------
+//     // calcAge: function (birthyear) {
+//     //     return 2037 - birthyear;
+//     // }
+//     // calcAge: function () {
+//     //     return 2037 - this.birthyear;
+//     // }
+//     calcAge: function () {
+//         this.age = 2037 - this.birthyear
+//         return this.age;
+//     },
+//     // ------------------------------------------challenge---------------------------------------------------
 
-    getSummary: function () {
-        return `kev is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} drivers license`
-    }
-}
+//     getSummary: function () {
+//         return `kev is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} drivers license`
+//     }
+// }
 
-console.log(kev.calcAge()) // here only need to do calculation once then its stored in age
-console.log(kev.age)
-console.log(kev.age)
-console.log(kev.age)
-console.log(kev.age)
+// console.log(kev.calcAge()) // here only need to do calculation once then its stored in age
+// console.log(kev.age)
+// console.log(kev.age)
+// console.log(kev.age)
+// console.log(kev.age)
 
 
-console.log(kev.getSummary())
-// console.log(kev['calcAge'](1995))
+// console.log(kev.getSummary())
+// // console.log(kev['calcAge'](1995))
 
 
 // ------------------------------------------challenge 3---------------------------------------------------
+// const mark = {
+//     fullName: 'mark miller',
+//     mass: 78,
+//     height: 1.69,
+//     calcBMI: function () {
+//         this.BMI = this.mass / this.height ** 2
+//         return this.BMI
+//     }
+// }
+// const john = {
+//     fullName: 'john smith',
+//     mass: 92,
+//     height: 1.95,
+//     calcBMI: function () {
+//         this.BMI = this.mass / this.height ** 2
+//         return this.BMI
+//     }
+// }
+
+// console.log(`johns BMI ${john.calcBMI()} is ${john.calcBMI() > mark.calcBMI() ? 'higher' : 'lower'} than marks ${mark.calcBMI()}`)
+
+// ------------------------------------------loops---------------------------------------------------
