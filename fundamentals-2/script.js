@@ -150,19 +150,24 @@
 // const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[2])]
 // console.log(ages)
 
-// ------------------------------------Array operations--------------------------------------------
-// push, unshift, pop, shift, indexOf, includes
-const friends = ['michael', 'steve', 'peter'];
-friends.push('jay') // push adds to end or array. also return length of new array
-console.log(friends)
+// // ------------------------------------Array operations--------------------------------------------
+// // push, unshift, pop, shift, indexOf, includes
+// const friends = ['michael', 'steve', 'peter'];
+// friends.push('jay') // push adds to end or array. also return length of new array
+// console.log(friends)
 
-friends.unshift('john'); // element to start of array
-console.log(friends)
+// friends.unshift('john'); // element to start of array
+// console.log(friends)
 
-friends.pop(); // returns removed element
-console.log(friends)
+// friends.pop(); // returns removed element
+// console.log(friends)
 
-friends.shift(); // removes first element
-console.log(friends.indexOf('steve'))
+// friends.shift(); // removes first element
+// console.log(friends.indexOf('steve'))
 
-console.log(friends.includes('steve')) //  true if includes. tests with strict equality ===
+// console.log(friends.includes('steve')) //  true if includes. tests with strict equality ===
+
+
+// -------------------------------------------challenge 2---------------------------------------------------
+
+
