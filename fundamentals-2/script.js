@@ -352,12 +352,18 @@
 //     console.log(`lifting rep number ${rep}`)
 // }
 
-let rep = 1;
-while (rep <= 10) {
-    console.log(`lifting rep number ${rep}`)
-    rep++
-}
+// let rep = 1;
+// while (rep <= 10) {
+//     // console.log(`lifting rep number ${rep}`)
+//     rep++
+// }
 
-let dice = Math.trunc(Math.random() * 6) + 1;
-console.log(dice)
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// console.log(dice)
 
+// while (dice != 6) {
+//     console.log(dice);
+//     dice = Math.trunc(Math.random() * 6) + 1;
+// }
+
+// ------------------------------------------challenge 4---------------------------------------------------
