@@ -159,7 +159,7 @@
 // friends.unshift('john'); // element to start of array
 // console.log(friends)
 
-// friends.pop(); // returns removed element
+// friends.pop(); // returns removed element (removes from end)
 // console.log(friends)
 
 // friends.shift(); // removes first element
@@ -170,4 +170,47 @@
 
 // -------------------------------------------challenge 2---------------------------------------------------
 
+// const betterCalc = function (bill) {
+//     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2
+// }
 
+
+// function calcTip(bill) {
+//     if (bill >= 50 && bill <= 300) {
+//         return bill * 0.15;
+//     } else {
+//         return bill * 0.2;
+//     }
+// }
+
+
+
+// console.log(calcTip(100))
+
+// const bills = [125, 555, 44]
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]
+// console.log(tips)
+
+// const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]]
+// console.log(total)
+
+
+// -------------------------------------------objects---------------------------------------------------
+// key value pairs aka properties
+
+// object literal syntax
+// const kev = {
+//     firstName: 'kev',
+//     lastName: 'flannagain',
+//     age: 2037 - 1991,
+//     job: 'engineer',
+// }
+
+// -------------------------------------------dot vs bracket notation---------------------------------------------------
+const kev = {
+    firstName: 'kev',
+    lastName: 'oflannagain',
+    age: 2037 - 1991,
+    job: 'engineer',
+}
+console.log(kev)
