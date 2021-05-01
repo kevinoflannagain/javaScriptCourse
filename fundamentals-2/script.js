@@ -326,44 +326,44 @@
 // console.log(ages);
 
 // ------------------------------------------continue and break---------------------------------------------------
-// console.log(`---only strings---`);
+console.log(`---only strings---`);
 
-// for (let i = 0; i < years.length; i++) {
-//     if (typeof kev[i] !== 'string') continue; // continue to next iteration
-//     console.log(kev[i], typeof kev[i])
-// }
+for (let i = 0; i < years.length; i++) {
+    if (typeof kev[i] !== 'string') continue; // continue to next iteration
+    console.log(kev[i], typeof kev[i])
+}
 
 // ------------------------------------------continue and break---------------------------------------------------
 
-// const kev = [
-//     'kev',
-//     'flannagain',
-//     2037 - 1991,
-//     'engineer',
-//     ['mike', 'steve']
-// ];
+const kev = [
+    'kev',
+    'flannagain',
+    2037 - 1991,
+    'engineer',
+    ['mike', 'steve']
+];
 
-// for (let i = kev.length - 1; i >= 0; i--) {
-//     console.log(i, kev[i])
-// }
+for (let i = kev.length - 1; i >= 0; i--) {
+    console.log(i, kev[i])
+}
 
 // ------------------------------------------while loop---------------------------------------------------
-// for (let rep = 1; rep <= 10; rep++) {
-//     console.log(`lifting rep number ${rep}`)
-// }
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`lifting rep number ${rep}`)
+}
 
-// let rep = 1;
-// while (rep <= 10) {
-//     // console.log(`lifting rep number ${rep}`)
-//     rep++
-// }
+let rep = 1;
+while (rep <= 10) {
+    // console.log(`lifting rep number ${rep}`)
+    rep++
+}
 
-// let dice = Math.trunc(Math.random() * 6) + 1;
-// console.log(dice)
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice)
 
-// while (dice != 6) {
-//     console.log(dice);
-//     dice = Math.trunc(Math.random() * 6) + 1;
-// }
+while (dice != 6) {
+    console.log(dice);
+    dice = Math.trunc(Math.random() * 6) + 1;
+}
 
 // ------------------------------------------challenge 4---------------------------------------------------
