@@ -1,107 +1,107 @@
 // -------------------------------strict mode----------------------
 'use strict'; // must be first line in scripts
 
-// let hasDriversLicense = false;
-// const passTest = true;
+let hasDriversLicense = false;
+const passTest = true;
 
-// // error on purpose - strict mode tells us var is undefined (spelled wrong)
-// if (passTest) hasDriverLicense = true
-// if (hasDriversLicense) console.log(`i can drive`);
+// error on purpose - strict mode tells us var is undefined (spelled wrong)
+if (passTest) hasDriverLicense = true
+if (hasDriversLicense) console.log(`i can drive`);
 
-// // these word sreserved in strict mode
-// // const interface = `Audio`;
-// // const private = 44;
+// these word sreserved in strict mode
+// const interface = `Audio`;
+// const private = 44;
 
 // ----------------------functions---------------------------
 
-// function logger() {
-//     console.log(`my name is kev`);
-// }
+function logger() {
+    console.log(`my name is kev`);
+}
 
-// //calling /running /invoking the function
-// logger();
+//calling /running /invoking the function
+logger();
 
 
-// function fruitProcessor(apples, oranges) {
-//     console.log(apples, oranges);
-//     const juice = `juice with ${apples} apples and ${oranges} oranges.`;
-//     return juice
-// }
+function fruitProcessor(apples, oranges) {
+    console.log(apples, oranges);
+    const juice = `juice with ${apples} apples and ${oranges} oranges.`;
+    return juice
+}
 
-// const appleJuice = fruitProcessor(5, 0);
-// console.log(appleJuice)
+const appleJuice = fruitProcessor(5, 0);
+console.log(appleJuice)
 
-// ----------------------function declaration ve expressions---------------------------
+// ----------------------function declaration vs expressions---------------------------
 // parameter is placeholder for actual argument
 // function declaration, can actually call fn before declared
 
-// function calcAge1(birthyear) {
-//     return 2037 - birthyear;
-// }
+function calcAge1(birthyear) {
+    return 2037 - birthyear;
+}
 
-// const age1 = calcAge1(1995);
-// console.log(age1);
+const age1 = calcAge1(1995);
+console.log(age1);
 
-// // function expression. can be stored in variable. cant call expression before declared
-// const calcAge2 = function (birthyear) {
-//     return 2037 - birthyear;
-// }
+// function expression. can be stored in variable. cant call expression before declared
+const calcAge2 = function (birthyear) {
+    return 2037 - birthyear;
+}
 
-// const age2 = calcAge2(1995)
-// console.log(age1, age2);
+const age2 = calcAge2(1995)
+console.log(age1, age2);
 
 // ------------------------------------arrow functions--------------------------------------------
-// const calcAge2 = function (birthyear) {
-//     return 2037 - birthyear;
-// }
+const calcAge2 = function (birthyear) {
+    return 2037 - birthyear;
+}
 
-// // arrow function (special faster fn expression) value returned automatically
-// const calcAge3 = birthyear => 2037 - birthyear
-// const age3 = calcAge3(1995)
-// console.log(age3);
+// arrow function (special faster fn expression) value returned automatically
+const calcAge3 = birthyear => 2037 - birthyear
+const age3 = calcAge3(1995)
+console.log(age3);
 
-// const yearsToRetire = (birthyear, firstName) => {
-//     const age = 2037 - birthyear;
-//     const retire = 65 - age;
-//     // return retire; // need return if more than 1 line
-//     return `${firstName} retires in ${retire} years`;
+const yearsToRetire = (birthyear, firstName) => {
+    const age = 2037 - birthyear;
+    const retire = 65 - age;
+    // return retire; // need return if more than 1 line
+    return `${firstName} retires in ${retire} years`;
 
-// }
-// console.log(yearsToRetire(1995, 'bob'))
+}
+console.log(yearsToRetire(1995, 'bob'))
 
 
 // ------------------------------------functions calling other functions--------------------------------------------
 
-// function cutFruit(fruit) {
-//     return fruit * 4;
-// }
+function cutFruit(fruit) {
+    return fruit * 4;
+}
 
-// function fruitProcessor(apples, oranges) {
-//     const applePieces = cutFruit(apples);
-//     const orangePieces = cutFruit(oranges);
+function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruit(apples);
+    const orangePieces = cutFruit(oranges);
 
-//     console.log(apples, oranges);
-//     const juice = `juice with ${applePieces} apples and ${orangePieces} oranges.`;
-//     return juice
-// }
-// console.log(fruitProcessor(2, 3));
+    console.log(apples, oranges);
+    const juice = `juice with ${applePieces} apples and ${orangePieces} oranges.`;
+    return juice
+}
+console.log(fruitProcessor(2, 3));
 
 
 // ------------------------------------reveiwing functions--------------------------------------------
 
 
-// const calcAge = function (birthyear) {
-//     return 2037 - birthyear
-// }
+const calcAge = function (birthyear) {
+    return 2037 - birthyear
+}
 
-// const yearsToRetire = function (birthyear, firstName) {
-//     const age = calcAge(birthyear);
-//     const retire = 65 - age;
-//     return retire;
-//     // return `${firstName} retires in ${retire} years`;
-// }
+const yearsToRetire = function (birthyear, firstName) {
+    const age = calcAge(birthyear);
+    const retire = 65 - age;
+    return retire;
+    // return `${firstName} retires in ${retire} years`;
+}
 
-// yearsToRetire(1995, 'kev')
+yearsToRetire(1995, 'kev')
 
 // ------------------------------------Challenge 1--------------------------------------------
 
@@ -126,46 +126,48 @@
 // only primitive vals immutable, arrays not immutable
 // however cant do: friends = ['bob'] after initializing
 
-// const friends = ['michael', 'steve', 'peter'];
+const friends = ['michael', 'steve', 'peter'];
+console.log(friends);
+// friends.length = 0
 // console.log(friends);
 
-// const y = new Array(1990, 1234, 1235);
+const y = new Array(1990, 1234, 1235);
 
-// console.log(friends.length);
-// console.log(friends[friends.length - 1]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
 
-// friends[2] = 'jake';
-// console.log(friends);
+friends[2] = 'jake';
+console.log(friends);
 
-// const kev = ['michael', friends, 2037 - 1995];
-// console.log(kev);
+const kev = ['michael', friends, 2037 - 1995];
+console.log(kev);
 
-// // exercise
-// const calcAge = function (birthyear) {
-//     return 2037 - birthyear
-// }
+// exercise
+const calcAge = function (birthyear) {
+    return 2037 - birthyear
+}
 
-// const years = [1990, 1967, 2002, 2010, 2018];
+const years = [1990, 1967, 2002, 2010, 2018];
 
-// const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[2])]
-// console.log(ages)
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[2])]
+console.log(ages)
 
-// // ------------------------------------Array operations--------------------------------------------
-// // push, unshift, pop, shift, indexOf, includes
-// const friends = ['michael', 'steve', 'peter'];
-// friends.push('jay') // push adds to end or array. also return length of new array
-// console.log(friends)
+// ------------------------------------Array operations--------------------------------------------
+// push, unshift, pop, shift, indexOf, includes
+const friends = ['michael', 'steve', 'peter'];
+friends.push('jay') // push adds to end or array. also return length of new array
+console.log(friends)
 
-// friends.unshift('john'); // element to start of array
-// console.log(friends)
+friends.unshift('john'); // element to start of array
+console.log(friends)
 
-// friends.pop(); // returns removed element (removes from end)
-// console.log(friends)
+friends.pop(); // returns removed element (removes from end)
+console.log(friends)
 
-// friends.shift(); // removes first element
-// console.log(friends.indexOf('steve'))
+friends.shift(); // removes first element
+console.log(friends.indexOf('steve'))
 
-// console.log(friends.includes('steve')) //  true if includes. tests with strict equality ===
+console.log(friends.includes('steve')) //  true if includes. tests with strict equality ===
 
 
 // -------------------------------------------challenge 2---------------------------------------------------

@@ -1,5 +1,5 @@
 
-/*
+
 let js = 'amazing';
 
 console.log(40 + 8 + 23 - 10);
@@ -17,8 +17,8 @@ console.log(typeof javascriptIsFun);
 
 javascriptIsFun = 'YES!'
 console.log(typeof javascriptIsFun);
-*/
-/*
+
+
 var job = 'programmer';
 job = 'teacher';
 
@@ -33,24 +33,24 @@ const markWeight = 78;
 const markHeight = 1.69;
 let johnWeight = 92;
 let johnHeight = 1.95;
-*/
+
 //----------------------challenge 1---------------------------
-// let johnWeight = 92;
-// let johnHeight = 1.95;
-// let johnBMI = johnWeight / johnHeight ** 2;
-// console.log(johnBMI);
+let johnWeight = 92;
+let johnHeight = 1.95;
+let johnBMI = johnWeight / johnHeight ** 2;
+console.log(johnBMI);
 
 
-// let markWeight = 78;
-// let markHeight = 1.69;
-// let markBMI = markWeight / markHeight ** 2;
-// let markHigherBMI = markBMI > johnBMI;
-// console.log(markBMI);
+let markWeight = 78;
+let markHeight = 1.69;
+let markBMI = markWeight / markHeight ** 2;
+let markHigherBMI = markBMI > johnBMI;
+console.log(markBMI);
 
-// console.log(markHigherBMI);
+console.log(markHigherBMI);
 
 //---------------------------------STRINGs and template literals----------------------------------
-/*
+
 const firstname = 'Kev';
 const job = 'engineer';
 const byear = 1995;
@@ -70,10 +70,10 @@ multiple \n\lines')
 console.log(`string
 multiple
 lines`)
-*/
+
 
 //--------------------------if else----------------------
-/*
+
 const age = 19;
 // const isOldEnough = age >= 18;
 
@@ -85,9 +85,9 @@ if (age >= 18) {
 
 }
 
-*/
+
 //------------------------------challenge 2----------------------------------
-/*
+
 let johnWeight = 92;
 let johnHeight = 1.95;
 let johnBMI = johnWeight / johnHeight ** 2;
@@ -107,61 +107,61 @@ if (markBMI > johnBMI) {
 } else {
     console.log(`john's BMI (${johnBMI}) is higher than marks(${markBMI})`)
 }
-*/
+
 
 //--------------------type conversion and coercion---------------------------
 //can convert to number, string, boolean
-// const inputYear = '1991';
-// console.log(Number(inputYear), inputYear)
-// console.log(Number(inputYear) + 18)
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear)
+console.log(Number(inputYear) + 18)
 
-// console.log(Number('kev')) // give NaN
-// console.log(String(23), 23) // give NaN
+console.log(Number('kev')) // give NaN
+console.log(String(23), 23) // give NaN
 
-// //type coercion + auto converts to string
-// console.log('i am ' + 23 + ' years old')
+//type coercion + auto converts to string
+console.log('i am ' + 23 + ' years old')
 
-// //type coercion - auto converts to number
-// console.log('23' - '10' - 3)
+//type coercion - auto converts to number
+console.log('23' - '10' - 3)
 
-// let n = '1' + 1;
-// n = n - 1;
-// console.log(n) // n is a number 10
+let n = '1' + 1;
+n = n - 1;
+console.log(n) // n is a number 10
 
 //--------------------truthy and falsy values---------------------------
 // 5 falsy vals: 0, '', undefined, null, NaN
 //will become false when converted to boolean
 // everything else converts to true
-// console.log(Boolean({})) // empty object converts to true
+console.log(Boolean({})) // empty object converts to true
 
 // ------------------------------equality operators == / === -------------------------
 // always use ===
-// const age = 18;
-// if (age === 18) console.log(`you just became an adult`);
+const age = 18;
+if (age === 18) console.log(`you just became an adult`);
 
-// // const fav = prompt(`Whats your fav number`);
-// const fav = Number(prompt(`Whats your fav number`));
-// console.log(fav)
-// console.log(typeof fav) // the prompt returns a string unless converted
+// const fav = prompt(`Whats your fav number`);
+const fav = Number(prompt(`Whats your fav number`));
+console.log(fav)
+console.log(typeof fav) // the prompt returns a string unless converted
 
-// if (fav === 23) {
-//     console.log('cool, 23 is a number')
-// } else if (fav === 7) {
-//     console.log(`7 is also a cool number`)
-// } else {
-//     console.log(`number isn't 23 or 7`)
-// }
+if (fav === 23) {
+    console.log('cool, 23 is a number')
+} else if (fav === 7) {
+    console.log(`7 is also a cool number`)
+} else {
+    console.log(`number isn't 23 or 7`)
+}
 
 // ------------------------------logical operators-------------------------
 
-// const hasDriverLicense = true;
-// const hasGoodVision = false;
+const hasDriverLicense = true;
+const hasGoodVision = false;
 
-// if (hasDriverLicense && hasGoodVision) {
-//     console.log(`can drive`);
-// } else {
-//     console.log(`cant drive safely`);
-// }
+if (hasDriverLicense && hasGoodVision) {
+    console.log(`can drive`);
+} else {
+    console.log(`cant drive safely`);
+}
 
 // -----------------------------challenge 3---------------------------------
 
@@ -180,29 +180,29 @@ if (markBMI > johnBMI) {
 // }
 
 // ---------------------- switch statement -------------------
-// const day = `monday`
+const day = `monday`
 
-// switch (day) {
-//     case `monday`:
-//         console.log(`go to code meetup`);
-//         break;
-//     case `tuesday`:
-//         console.log(`make video`);
-//         break;
-//     case `wed`:
-//     case `thurs`:
-//         console.log(`write code`);
-//         break
-//     case `fri`:
-//         console.log(`review`);
-//         break;
-//     case `sat`:
-//     case `sun`:
-//         console.log(`review`);
-//         break;
-//     default:
-//         console.log(`not valid day`);
-// }
+switch (day) {
+    case `monday`:
+        console.log(`go to code meetup`);
+        break;
+    case `tuesday`:
+        console.log(`make video`);
+        break;
+    case `wed`:
+    case `thurs`:
+        console.log(`write code`);
+        break
+    case `fri`:
+        console.log(`review`);
+        break;
+    case `sat`:
+    case `sun`:
+        console.log(`review`);
+        break;
+    default:
+        console.log(`not valid day`);
+}
 
 // ------------------------statements and expressions--------------
 
