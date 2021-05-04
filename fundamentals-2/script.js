@@ -172,18 +172,18 @@ console.log(friends.includes('steve')) //  true if includes. tests with strict e
 
 // -------------------------------------------challenge 2---------------------------------------------------
 
-// const betterCalc = function (bill) {
-//     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2
-// }
+const betterCalc = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2
+}
 
 
-// function calcTip(bill) {
-//     if (bill >= 50 && bill <= 300) {
-//         return bill * 0.15;
-//     } else {
-//         return bill * 0.2;
-//     }
-// }
+function calcTip(bill) {
+    if (bill >= 50 && bill <= 300) {
+        return bill * 0.15;
+    } else {
+        return bill * 0.2;
+    }
+}
 
 
 
@@ -201,67 +201,67 @@ console.log(friends.includes('steve')) //  true if includes. tests with strict e
 // key value pairs aka properties
 
 // object literal syntax
-// const kev = {
-//     firstName: 'kev',
-//     lastName: 'flannagain',
-//     age: 2037 - 1991,
-//     job: 'engineer',
-// }
+const kev = {
+    firstName: 'kev',
+    lastName: 'flannagain',
+    age: 2037 - 1991,
+    job: 'engineer',
+}
 
 // -------------------------------------------dot vs bracket notation---------------------------------------------------
-// const kev = {
-//     firstName: 'kevin',
-//     lastName: 'oflannagain',
-//     friends: ['steve', 'mike', 'niamh'],
-//     age: 2037 - 1991,
-//     job: 'engineer',
-// }
+const kev = {
+    firstName: 'kevin',
+    lastName: 'oflannagain',
+    friends: ['steve', 'mike', 'niamh'],
+    age: 2037 - 1991,
+    job: 'engineer',
+}
 
-// console.log(kev);
-// console.log(kev.lastName);
-// console.log(kev['lastName']);
-// console.log(kev['lastName']);
-// const nameKey = 'Name';
-// console.log(kev['first' + nameKey]);
+console.log(kev);
+console.log(kev.lastName);
+console.log(kev['lastName']);
+console.log(kev['lastName']);
+const nameKey = 'Name';
+console.log(kev['first' + nameKey]);
 
 
-// const interest = prompt('what do you want to know about kev? choose between firstName, lastName')
-// console.log(interest)
-// console.log(kev.interest) // gives undefined
-// console.log(kev[interest])
+const interest = prompt('what do you want to know about kev? choose between firstName, lastName')
+console.log(interest)
+console.log(kev.interest) // gives undefined
+console.log(kev[interest])
 
-// kev.location = 'ireland'
-// kev['twitter'] = '@kev'
-// console.log(kev)
+kev.location = 'ireland'
+kev['twitter'] = '@kev'
+console.log(kev)
 
-// console.log(`${kev.firstName} has ${kev.friends.length} and his best friend is ${kev.friends[0]}`)
+console.log(`${kev.firstName} has ${kev.friends.length} and his best friend is ${kev.friends[0]}`)
 
 // -------------------------------------------object methods---------------------------------------------------
 
-// const kev = {
-//     firstName: 'kevin',
-//     lastName: 'oflannagain',
-//     birthyear: 1995,
-//     friends: ['steve', 'mike', 'niamh'],
-//     job: 'engineer',
-//     hasDriversLicense: true,
+const kev = {
+    firstName: 'kevin',
+    lastName: 'oflannagain',
+    birthyear: 1995,
+    friends: ['steve', 'mike', 'niamh'],
+    job: 'engineer',
+    hasDriversLicense: true,
 
-//     // calcAge: function (birthyear) {
-//     //     return 2037 - birthyear;
-//     // }
-//     // calcAge: function () {
-//     //     return 2037 - this.birthyear;
-//     // }
-//     calcAge: function () {
-//         this.age = 2037 - this.birthyear
-//         return this.age;
-//     },
-//     // ------------------------------------------challenge---------------------------------------------------
+    // calcAge: function (birthyear) {
+    //     return 2037 - birthyear;
+    // }
+    // calcAge: function () {
+    //     return 2037 - this.birthyear;
+    // }
+    calcAge: function () {
+        this.age = 2037 - this.birthyear
+        return this.age;
+    },
+    //     // ------------------------------------------challenge---------------------------------------------------
 
-//     getSummary: function () {
-//         return `kev is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} drivers license`
-//     }
-// }
+    getSummary: function () {
+        return `kev is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} drivers license`
+    }
+}
 
 // console.log(kev.calcAge()) // here only need to do calculation once then its stored in age
 // console.log(kev.age)
@@ -298,34 +298,34 @@ console.log(friends.includes('steve')) //  true if includes. tests with strict e
 
 // ------------------------------------------loops---------------------------------------------------
 
-// for (let rep = 1; rep <= 10; rep++) {
-//     console.log(`lifting rep number ${rep}`)
-// }
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`lifting rep number ${rep}`)
+}
 
-// const kev = [
-//     'kev',
-//     'flannagain',
-//     2037 - 1991,
-//     'engineer',
-//     ['mike', 'steve']
-// ];
+const kev = [
+    'kev',
+    'flannagain',
+    2037 - 1991,
+    'engineer',
+    ['mike', 'steve']
+];
 
-// const types = [];
+const types = [];
 
-// for (let i = 0; i < kev.length; i++) {
-//     console.log(kev[i]);
-//     // types[i] = typeof (kev[i])
-//     types.push(typeof kev[i])
-// }
-// console.log(types);
+for (let i = 0; i < kev.length; i++) {
+    console.log(kev[i]);
+    // types[i] = typeof (kev[i])
+    types.push(typeof kev[i])
+}
+console.log(types);
 
-// const years = [1991, 2007, 1969, 2020]
-// const ages = [];
+const years = [1991, 2007, 1969, 2020]
+const ages = [];
 
-// for (let i = 0; i < years.length; i++) {
-//     ages.push(2037 - years[i]);
-// }
-// console.log(ages);
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i]);
+}
+console.log(ages);
 
 // ------------------------------------------continue and break---------------------------------------------------
 console.log(`---only strings---`);

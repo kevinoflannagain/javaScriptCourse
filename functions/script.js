@@ -91,3 +91,80 @@ const high5 = function () {
 }
 document.body.addEventListener('click', high5);
 ['jonas', 'martha', 'alice'].forEach(high5);
+
+
+// -----------------------function to check if contains duplicates-------------------------
+function containsDuplicates(a) {
+    let duplicates = false;
+    let map = {};
+    for (let i = 0; i < a.length; i++) {
+        if (map[a[i]]) {
+            duplicates = true;
+            // terminate the loop
+            break;
+        }
+        // add entry in object with the element as key
+        map[a[i]] = true;
+    }
+
+    return duplicates
+}
+
+// -----------------------pair of numbers from a and b that sum to give v?-------------------------
+
+function sumOfTwo(a, b, v) {
+    let exists = false;
+
+    let hashTable = {};
+
+    b.forEach((b, index) => hashTable[b] = index);
+    let numsIndexes = {};
+    for (let i = 0; i <= a.length; i += 1) {
+        let currentDifference = v - a[i];
+        // console.log(`current dif: ${currentDifference}`);
+        if (hashTable[currentDifference] !== undefined) {
+            exists = true;
+            return exists;
+        }
+    }
+    return exists
+}
+
+//----------------------check palindrome------------------------
+function checkPalindrome(inputString) {
+    rev = inputString.split('').reverse().join('');
+    return rev === inputString ? true : false
+}
+
+
+//-------------------adjacent elements largest product-----------------------
+function adjacentElementsProduct(inputArray) {
+    // let j = i;
+    let prod = inputArray[0] * inputArray[1];
+    let prev = 0;
+    let post = 0;
+    for (i in inputArray) {
+
+
+        prev = i > 0 ? (inputArray[i] * inputArray[i - 1]) : prod
+        post = i < inputArray.length ? (inputArray[i] * inputArray[i + 1]) : prod
+        if (prod < prev) {
+            prod = prev;
+        } else if (prod < post) {
+            prod = post;
+        }
+
+    }
+    return prod
+}
+
+//-----------------make array consecutive-------------------
+function makeArrayConsecutive2(statues) {
+    let arr = [];
+    for (i = Math.min(...statues); i <= Math.max(...statues); i++) {
+        arr.push(i);
+    }
+    console.log(Math.min(...statues))
+
+    return arr.length - statues.length
+}
